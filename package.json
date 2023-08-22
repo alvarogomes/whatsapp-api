@@ -1,0 +1,41 @@
+{
+  "name": "whatsapp-api",
+  "version": "1.0.0",
+  "description": "API para integrar com o WhatsApp utilizando whatsapp-web.js",
+  "main": "app.js",
+  "author": "Seu Nome",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js",
+    "start-balcao": "PORT=4000 node app.js",
+    "test": "jest --forceExit"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "testMatch": [
+      "**/__tests__/**/*.js",
+      "**/*.test.js"
+    ]
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "audiobuffer": "^0.2.0",
+    "audiobuffer-to-wav": "^1.0.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.17.1",
+    "express-swagger-generator": "^1.1.17",
+    "fluent-ffmpeg": "^2.1.2",
+    "qrcode": "^1.4.4",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
+    "whatsapp-web.js": "^1.22.1"
+  },
+  "devDependencies": {
+    "jest": "^29.6.2",
+    "jest-mock-extended": "^3.0.5",
+    "supertest": "^6.3.3"
+  }
+}
